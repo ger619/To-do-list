@@ -1,5 +1,6 @@
 // css files here
 import './style.css';
+import _ from 'lodash';
 
 const tasks = [{
   id: 1,
