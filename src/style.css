@@ -1,5 +1,7 @@
 /* CSS */
 
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,700);
+
 html {
   box-sizing: border-box;
 }
@@ -22,6 +24,12 @@ html {
   align-items: center;
   border-bottom: 1px solid rgba(220, 220, 220, 1);
   padding: 0 1rem;
+  text-align: center;
+}
+
+.list-head p {
+  text-align: right;
+  font-family: "Poppins", sans-serif;
 }
 
 #icon {
@@ -33,23 +41,6 @@ html {
   font-size: 1rem;
   padding: 1rem 1rem;
   font-style: italic;
-}
-
-.list {
-  display: flex;
-  align-items: baseline;
-  border-bottom: 1px solid rgba(220, 220, 220, 1);
-  border-top: 1px solid rgba(220, 220, 220, 1);
-  padding: 0 1rem;
-}
-
-.list p {
-  margin-left: 1rem;
-}
-
-a {
-  margin-left: auto;
-  color: gray;
 }
 
 .button {

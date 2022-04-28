@@ -1,43 +1,24 @@
 // css files here
 import './style.css';
 import _ from 'lodash';
+import TaskAll from '../modules/taskall';
+import showTasks from '../modules/showtask';
+import Task from '../modules/tasks';
 
-const tasks = [{
-  id: 1,
-  task: 'Morning Run',
-  completed: true,
-},
-{
-  id: 2,
-  task: '30 Push Up',
-  completed: true,
-},
-{
-  id: 3,
-  task: 'Morning Walk',
-  completed: false,
-},
-{
-  id: 4,
-  task: '30 Squats',
-  completed: false,
-},
-];
 
-const toDo = document.getElementById('todo-list');
+document.addEventListener('DOMContentLoaded', showTasks.displayTasks);
 
-function TaskObject() {
-  let workout = '';
-  tasks.forEach((job) => {
-    workout += `
-              <div class="list">
-                  <input type="checkbox">
-                  <p>${job.task}</p>
-             
-         <a><i class="fa fa-ellipsis-v fa-2x" aria-hidden="true"></i>
-                  </a>
-              </div>`;
-  });
-  toDo.innerHTML = workout;
-}
-TaskObject();
+document.querySelector('#todo-list').addEventListener('submit', (e) => {
+    const job = document.querySelector('#input').value;
+    const task = new Task(job);
+    showTasks.addBookToList(task);
+    TaskAll.addBook(task);
+    showTasks.clearFields();
+    e.preventDefault();
+});
+
+document.querySelector('#todo-list').addEventListener('click', (e) => {
+    showTasks.deleteBook(e.target);
+
+    TaskAll.removeBook(e.target.parentElement.previousElementSibling.textContent);
+});
