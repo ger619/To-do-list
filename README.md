@@ -1,66 +1,52 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Microverse Webpack Javascript
 
-# Project Name
+> For the second Javascript milestone in building a todo website,
 
-> Description the project.
+> set up a new repository and prepare it for development using best practices (e.g. linters).
 
+# Screenshot
 
-## Built With
+> This is the first [interface](./screenshots/inage12.png)
 
-- Major languages
-- Frameworks
-- Technologies used
+## Built with
 
-## Live Demo (if available)
+- HTML CSS & JAVASCRIPT
 
-[Live Demo Link](https://livedemo.com)
+## Link to the live page
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+> Feel free to check the [To-do-link](https://ger619.github.io/To-do-list/).
 
 ## Authors
 
-👤 **Author1**
+👤 **David Ger**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ger619](https://github.com/ger619)
+- Twitter: [@abol_ger](https://twitter.com/ger_abol)
+- LinkedIn: [David Ger](https://www.linkedin.com/in/david-ger-426b4576/)
 
-👤 **Author2**
+## Collaborators
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+## Getting Started
 
-## Show your support
+To get a local copy follow these simple steps:
 
-Give a ⭐️ if you like this project!
+- Copy this link .
+
+- Create a local directory that you want to clone the repository.
+
+- Open the command prompt in the created directory.
+
+- On the terminal run this command git clone https://github.com/ger619/To-do-list.git.
+
+- Go to the repository folder using command prompt cd javascript-capstone.
+
+- Install the dev dependencies for linters run npm install.
 
 ## Acknowledgments
 
