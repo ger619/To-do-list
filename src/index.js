@@ -63,8 +63,7 @@ Element.listBody.addEventListener('click', (e) => {
       newTask.setEdit(e.target.ariaLabel);
       refresh();
     } else if (e.target.dataset.name === 'delete') {
-      // eslint-disable-next-line
-      newTask.removeTask(parseInt(e.target.ariaLabel));
+      newTask.removeTask(parseInt(e.target.ariaLabel, 10));
       refresh();
     }
   }
@@ -73,8 +72,7 @@ Element.listBody.addEventListener('click', (e) => {
 Element.listBody.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
     if (e.target.value) {
-      // eslint-disable-next-line
-      const id = parseInt(e.target.ariaLabel);
+      const id = parseInt(e.target.ariaLabel, 10);
       newTask.editTask(id, e.target.value);
       refresh();
     }
@@ -83,8 +81,7 @@ Element.listBody.addEventListener('keydown', (e) => {
 
 Element.listBody.addEventListener('change', (e) => {
   if (e.target.dataset.name === 'status') {
-    // eslint-disable-next-line
-    newTask.changeComplete(parseInt(e.target.ariaLabel));
+    newTask.changeComplete(parseInt(e.target.ariaLabel, 10));
     refresh();
   }
 });
