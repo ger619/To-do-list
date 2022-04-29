@@ -1,7 +1,5 @@
 /* CSS */
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,700);
-
 html {
   box-sizing: border-box;
 }
@@ -22,14 +20,8 @@ html {
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(220, 220, 220, 1);
+  border: 2px solid rgba(220, 220, 220, 1);
   padding: 0 1rem;
-  text-align: center;
-}
-
-.list-head p {
-  text-align: right;
-  font-family: "Poppins", sans-serif;
 }
 
 #icon {
@@ -41,6 +33,27 @@ html {
   font-size: 1rem;
   padding: 1rem 1rem;
   font-style: italic;
+}
+
+.list {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(220, 220, 220, 1);
+  border-top: 1px solid rgba(220, 220, 220, 1);
+  padding: 1rem 1rem;
+}
+
+.list p {
+  margin-left: 1rem;
+}
+
+i {
+  margin-left: auto;
+  color: gray;
+}
+
+.hide {
+  display: none;
 }
 
 .button {
@@ -56,4 +69,24 @@ button {
   border: none;
   color: gray;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: rgba(255, 235, 205);
+}
+
+.edit input {
+  border: none;
+  background-color: rgba(255, 235, 205);
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.strike {
+  text-decoration: line-through;
 }
