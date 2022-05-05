@@ -35,7 +35,6 @@ const refresh = () => {
 };
 refresh();
 
-// Event Listeners
 Element.addList.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
     const val = Element.addList.value;
