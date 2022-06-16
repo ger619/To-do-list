@@ -11,24 +11,14 @@ const getCheck = (element) => ` ${
     : `<input type="checkbox" aria-label="${element.index}" data-name="status" name="check">`
 } `;
 
-const showTaskItem = (element) => `<div class="list show">
-                ${getCheck(element)}                
-                <p class="taskdescription ${
-  element.completed ? 'strike' : ''
-}">${element.description}</p>
-               <i class="fa fa-ellipsis-v fa-2x menu-icon" aria-label="${
-  element.index
-}"  data-name="edit"></i>
-          </div>`;
+const showTaskItem = (element) => `<div class="list show"> ${getCheck(element)}                
+    <p class="taskdescription ${element.completed ? 'strike' : ''}">${element.description}</p>
+       <i class="fa fa-ellipsis-v fa-2x menu-icon" aria-label="${element.index}"  data-name="edit"></i>
+  </div>`;
 
-const editDescription = (element) => `<div class="list edit">
-                 ${getCheck(element)} 
-                <input type="text" class="desc" value="${
-  element.description
-}" aria-label ="${element.index}" >
-                <i class="fa fa-trash-o fa-2x" aria-label="${
-  element.index
-}"  data-name="delete"></i>
+const editDescription = (element) => `<div class="list edit"> ${getCheck(element)} 
+                <input type="text" class="desc" value="${element.description}" aria-label ="${element.index}" >
+                <i class="fa fa-trash-o fa-2x" aria-label="${element.index}"  data-name="delete"></i>
           </div>`;
 
 const refresh = () => {
@@ -45,7 +35,6 @@ const refresh = () => {
 };
 refresh();
 
-// Event Listeners
 Element.addList.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
     const val = Element.addList.value;
